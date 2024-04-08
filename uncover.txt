@@ -1,0 +1,4 @@
+export HUNTERHOW_API_KEY=20639940a8bad747ce514696420ce292 && export CRIMINALIP_API_KEY=PhYPc3su3I5HB1v11tXTenL8Ct2LkPVnTBs4XZwHdC3Tuy256GxNbF5m9NQb && export HUNTER_API_KEY=e88e24af02d7e030eddeccc0dd7c6bb4f4b47350 && export CENSYS_API_SECRET=hfScUaKO68jc96HVcZMWRnd9Z08b41k0 && export CENSYS_API_ID=334580a9-915f-43fe-b8a4-76c324b3d729 && export SHODAN_API_KEY=EOAam2beB1CMQQH0qi4B7cN4VO0Qchf9 &&
+ echo loom.com | uncover -l 99999 -e shodan,censys,hunter,criminalip,hunterhow > uncover.txt
+
+ sudo nmap -PE -PM -PP -sn -n -oN ipnmap-24.txt -iL uncover.txt && echo nmap success | notify

@@ -1,0 +1,8 @@
+subfinder -d bybit.com | tee target.txt
+dirsearch -u bybit.com --deep-recursive
+
+
+
+
+awk '{print "https://" $1}' domains.txt
+awk '{print $1"/"}' domains.txt

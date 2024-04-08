@@ -1,0 +1,9 @@
+not gonna work
+stripe 
+segement write key
+optimizely client key
+datadog client token+app id (only api key was vulnerable)
+
+possible to exploit
+googlestorage api possible to attack
+

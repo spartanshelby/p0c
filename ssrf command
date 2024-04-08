@@ -1,0 +1,1 @@
+ssrf -- cat url.txt | grep "=" | sed 's/=\(.*\)/=http:\/\/asdf.oastify.com\/\1/g' > ssrf.txt

@@ -1,0 +1,6 @@
+not correct 
+#ffuf -w  -u https://.com:2096 -r -c -rate 10 -o ffuuf.txt
+
+use help when need cluster bomb fuzz
+
+ffuf -w wordlist -u -o -r

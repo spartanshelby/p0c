@@ -1,0 +1,84 @@
+sublist3r
+pip install Sublist3r
+
+assetfinder
+go get -u github.com/tomnomnom/assetfinder
+
+subfinder
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+~/Desktop/github-search/
+git clone https://github.com/gwen001/github-search
+cd github-search
+pip3 install -r requirements.txt
+
+crt.sh
+go install github.com/tomnomnom/httprobe@latest
+git clone https://github.com/snwlol/crt.sh.git
+cd crt.sh
+chmod a+x crt.sh
+
+ripgen
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install ripgen
+
+httpx
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+
+waybackurls
+go install github.com/barisbaydur/waybackurls@latest
+
+hakrawler
+sudo apt install hakrawler  #kali
+go install github.com/hakluke/hakrawler@latest
+
+gau
+go install github.com/lc/gau/v2/cmd/gau@latest
+
+katana
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+
+xurlfind3r
+go install -v github.com/hueristiq/xurlfind3r/cmd/xurlfind3r@latest
+
+cariddi
+go install -v github.com/edoardottt/cariddi/cmd/cariddi@latest
+
+ffuf
+go install github.com/ffuf/ffuf/v2@latest
+
+naabu
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+
+nuclei
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+
+dirsearch
+sudo apt-get install dirsearch
+
+gauplus
+go install github.com/bp0lr/gauplus@latest
+
+kali ;linux source
+
+
+sudo git clone https://github.com/aboul3la/Sublist3r.git && cd Sublist3r && sudo pip install -r requirements.txt && sudo apt-get install python-requests && sudo apt-get install python-dnspython && sudo apt-get install python-argparse && sudo ln -sfv /opt/Sublist3r/sublist3r.py /usr/bin/sublist3r && cd ../ && go install github.com/tomnomnom/assetfinder@latest && go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest && go install github.com/tomnomnom/httprobe@latest  && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh  && sudo apt install cargo && sudo cargo install ripgen && go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest && go install github.com/barisbaydur/waybackurls@latest   && go install github.com/hakluke/hakrawler@latest && go install github.com/lc/gau/v2/cmd/gau@latest && go install github.com/projectdiscovery/katana/cmd/katana@latest && go install -v github.com/hueristiq/xurlfind3r/cmd/xurlfind3r@latest && go install -v github.com/edoardottt/cariddi/cmd/cariddi@latest && go install github.com/ffuf/ffuf/v2@latest && go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest && go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest && sudo apt-get install dirsearch && go install github.com/bp0lr/gauplus@latest
+
+git clone https://github.com/gwen001/github-search && cd github-search && pip3 install -r requirements.txt 
+git clone https://github.com/snwlol/crt.sh.git && cd crt.sh && chmod a+x crt.sh
+
+
+reffer for kali linux https://www.onemarcfifty.com/blog/video/How-to-build-Kali-Linux-from-Debian/
+
+
+
+wget https://archive.kali.org/archive-key.asc -O /etc/apt/trusted.gpg.d/kali-archive-keyring.asc
+
+
+ssh -i ~/.ssh/id_rsa.pem spartan@4.247.148.172
+scp file spartan@4.247.148.172:~/Desktop/  upload
+scp spartan@4.247.148.172:~/Desktop/ file  download
+
+
+ssh spartan@0.tcp.ap.ngrok.io -p 16645
+https://www.youtube.com/watch?v=KxwAFenP7J0

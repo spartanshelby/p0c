@@ -1,0 +1,97 @@
+fuzz/robots.txt  							logsensor,fuzzuli,uro, {autorize,inql scaaner,Upload Scanner burp ext-pentestmapper, worlist extractor,Replicator,},trufflehog tool,github&lab-subdomains,
+									AnalyticsRelationships,nikto,whatweb,wawoof,admin-finder,hiturl,okadmin
+ 
+ https://www.infobyip.com/ipbulklookup.php https://offsec.tools/  - bookmarks
+
+goto wayback archives and search for zip files for good 
+
+Delete CSRF token
+Null token parameter
+Modify request method Form GET to POST or PUT etc.
+Replace token with any string of the same length as token
+Fixed token Every user's token can be shared
+									
+ read edit profile in intercept tab for like role=3 to change 1 to access admin like p1 
+ 
+ bypass it by using capitalization like -pclub.Target.com/MyDAsH
+ 
+ http.title:"DisallowedHost at /" ssl:"target.*" for p1 bugs
+ 
+ LFI in only like file=../..//.//  not example.com/../../
+ 
+httpx -l hosts.txt -p 8000,8888,3000,80,443,8009,8080,8081,8090,8180,8443 -path /admin -threads 100 -random-agent -mc 200,403 -x GET,POST -fr -title -cl -sc
+ 
+ in automation there is no need like png,jpg,gif,jpeg,swf,woff,gif,svg
+ 
+ https://devadmin.example.com/admin/setpassword.jsp?.css   ?.extension to fuzz for admin
+ 
+/config.js check it leads to every js endpoint
+if the target website utilizes ReactJS, you are likely to encounter main.js and app.js files
+
+use uro tool to remove similar and uninteresting URL’s
+
+remove password field from request &leave username
+
+if bookmark or save page in webpage intercept & modify
+
+use intresting domain name to search in censys/shodan 
+
+to make wordlists of parameters from a list of urls
+
+httpx -l subdomains.txt -ports 80,8080,8000,8888 -threads 200 > subdomains_alive.txt
+This helped me to find multiple open dashboards and login pages with default
+credentials. Also, this will make the attack surface more wider for us to do bug
+bounty.
+
+fuzzing for directories irrespective of the status code whether it may be 200,404 or
+403. Most of the times the Gems are inside these pages.
+
+do xss double/triple url encode to bypass
+
+main domain is a Wordpress website, so I had one more thing to try xmlrpc.php
+If xmlrpc.php is active, a harmless blind SSRF attack can be performed and the
+origin IP could be obtained
+
+.js.map file refer nightbane writeup and use sourcemapper tool
+
+Visual Site Mapper
+(www.visualsitemapper.com). This tool will create a graphical sitemap and can be
+very useful to list public URLs to understand how the website works and how pages
+interact behind those
+
+
+Add the X-Forwarded-Host: burp collab parameter in email reset intercept tab 
+
+openredir to xss to account take over by crafted a payload to steal user’s cookie and send them to my burp collab -refer " How I Leveraged Open Redirect to Account Takeover "
+
+if ping back from from ssrf. recon ip (like aws ip then put aws directory as input in ssrf parammeter and find informations like aws meta data  -refer " my-first-case-of-ssrf-using-dirsearch "  " Bypassing SSRF Protection to Exfiltrate AWS Metadata from LarkSuite "
+
+email bombing by intercept register email by fuzzing email number like 1-crowdninja@bugcrowd.com $1$ as fuzzing parameter
+
+if idor possible do analyze 3 different account by find payload/fuzz parameters and account takeover/ idor
+
+sql inject in http custom header like user= something or time= something - refer "SQL Injection in The HTTP Custom Header" also do xss,ssrf
+
+always check admin bypass by using noredirect extension 
+
+fuzzli tool to find critical backup
+
+fuzz/robots.txt
+
+try alternate ssrf https://www.redacted.com/redacted/downloads/pdf?link=https://redacted.com/files/something.pdf -- https://www.redacted.com/redacted/downloads/pdf?link=https://dnsapi.redacted.com/
+
+whitelabel page error -try dirbuster
+
+While conducting my narrow recon and exploring the web application's features, I came across the site's support contact page. I used the GAP (gather all param) Burp Suite extension to extract the parameters of the same domain and the x8 tool to do the parameter discovery addon is a param. Finally, I found a reflected XSS using the "addon" parameter.
+domain.tld/path?addon=XSS  ----7000-bounty-on-a-single-web-application
+
+ Race condition - hitting the cancel button on the confirmation prompt simultaneously resulted in a refund of 1 + 1 credit back to your account. This process could be performed an unlimited number of times, and each time your credit balance for the trial increased by 1, granting you free access everywhere.
+
+check disallow from robots.txt and check for any api/app oriented name and search directory/documentation and login with default cred.  (like disallow intershop -intershop is a app. documentation url/intershop/soomething/something/login default -cred admin admin boom $$$$
+
+
+
+Utilize dark web search engines like Grams, Torch, or Ahmia to find websites and hacking forums Leverage specialized dark web monitoring tools such as DarkOwl,
+Flashpoint, or Recorded Future to automate monitoring and analyze content
+
+

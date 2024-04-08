@@ -1,0 +1,5 @@
+nuclei -l sortdomain.txt -t  ~/nuclei-templates/http/exposed-panels/ -stats -si 82 -o nuc.txt -fr -rl 500 -nh
+
+
+for cloud
+nuclei -l sortdomain.txt -t  ~/nuclei-templates/http/exposed-panels/ -stats -si 82 -o nuc.txt -fr -nh -no-mhe 

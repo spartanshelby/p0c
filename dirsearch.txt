@@ -1,0 +1,7 @@
+sudo dirsearch -u a.com -r --force-recursive -w  ~/Desktop/starter.txt -F --random-agent -o dirsearch.txt -x 404,400
+
+
+sudo dirsearch -u .com -w ~/Desktop/ -F --random-agent -x 404,400,403 --max-rate=88 --full-url > dirsearch_parm.txt && echo 12.00pm | notify
+
+
+--recursion-status=403          #only queue 403

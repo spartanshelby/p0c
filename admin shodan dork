@@ -1,0 +1,26 @@
+Shodan dorks for admin Panels:
+ssl.cert.subject.cn:"company.com" http.title:"admin"
+ssl:"company.com" http.title:"admin"
+ssl.cert.subject.cn:"company.com" admin
+ssl:"company.com" admin
+
+http.favicon.hash:<favicon-hash>
+
+
+Fofa Dorks For Finding the Admin Panel :
+cert="company.com" && title="admin"
+cert.subject="company" && title="admin"
+cert="company.com" && body="admin"
+cert.subject="company" && body="admin"
+
+
+ZoomEye Dorks For Finding the Admin Panel:
+ssl:company.com + title:"admin"
+ssl:company.com + admin
+
+
+Censys (IPv4) Dorks For Finding the Admin Panel:
+(services.tls.certificates.leaf_data.issuer.common_name:company.com) AND
+services.http.response.html_title:admin
+(services.tls.certificates.leaf_data.issuer.common_name:company.com) AND
+services.http.response.body:admin

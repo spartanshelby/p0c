@@ -1,0 +1,23 @@
+single domain 
+sublist3r -d waymo.com -o sublist3r.txt && echo waymo.com | assetfinder -subs-only > assetfinder.txt && sudo subfinder -up && subfinder -d waymo.com > subfinder.txt && python3 ~/Desktop/github-search/github-subdomains.py -t  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 -d waymo.com > githubsubdomain.txt 
+
+sudo shuffledns -up && shuffledns -d waymo.com -w ~/Desktop/wordlist/SecLists/Discovery/DNS/bug-bounty-program-subdomains-trickest-inventory.txt -r ~/Desktop/wordlist/SecLists/Miscellaneous/dns-resolvers.txt -o brutesub_loom.txt && echo subbrute done | notify
+
+crt.sh  waymo.com 
+
+==================================
+list of domains
+mkdir sublister && cd sublister && cat ../domain.txt | while read line; do sublist3r -o "$line.txt" -d "$line"; done && cat *.txt > ../sublister.txt && cd ../ && echo input.txt | assetfinder -subs-only > assetfinder.txt && subfinder -dL input.txt > subfinder.txt
+
+mkdir crt && cd crt && cat ../domain.txt | while read line; do crt.sh "$line.txt"; done && cat *.txt > ../crt.txt
+==================================
+
+cat *.txt | sort -u  | grep -v *. > sortdom.txt 
+remove symbols *. & http/s
+
+ripgen -d sortdom.txt > ripgen.txt
+
+cat sortdom.txt ripgen.txt | sort -u  > sortdomain.txt
+
+add single scope domain
+subzy v && subzy u && subzy v && subzy r --targets ripgen.txt --https --timeout 40  --hide_fails > subzy.txt
